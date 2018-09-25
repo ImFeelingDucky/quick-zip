@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Create a .zip file of all .py files in the current directory"""
 
 import os
