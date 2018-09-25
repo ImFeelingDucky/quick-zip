@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+wget -O zippit https://raw.githubusercontent.com/ImFeelingDucky/quick-zip/master/zip.py
+chmod +x zippit
+mkdir -p -- "~/.bin/"
+mv zippit ~/.bin/zippit
+
+# Clever users will have set ~/.bin/ their directories on their PATH
+# Unfortunately, not everyone will. Although it is mildly intrusive,
+# we choose to prioritise ease-of-install, and will set this in an
+# pretty ugly way. If this was meant for a bigger audience,
+# we would choose a more robust solution to this problem.
+
+# Setting environment variables that work cross-platform, cross-distro is
+# way more convoluted than it should be. Angery emoji.
+# profile_paths=('~/.bash_profile' '~/.bashrc')
+
+# for p in "${profile_paths[@]}"; do
+    # if [ -f $p ]; then
+	# echo "Setting PATH in $p to:"
+	# echo "$PATH:~/.bin"
+        # echo "PATH+=:~/.bin" >> $p
+    # fi
+# done
+
+echo "PATH+=\":~/.bin\"" >> ~/.bashrc
+
