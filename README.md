@@ -2,7 +2,7 @@
 With a single command, instantly zip a copy of all files in your current directory. Easily configure `zippit` to only zip certain file extensions or name the zip file something different.
 
 ## Instructions
-There is a quick installation step before you can use `quick-zip`.
+There is a quick installation step before you can use `zippit`.
 
 1. Paste everything after the `$` sign into a terminal window and hit enter.
 ```bash
